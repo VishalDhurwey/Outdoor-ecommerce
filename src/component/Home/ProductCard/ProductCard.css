@@ -1,0 +1,44 @@
+
+img{
+    display: flex;
+    justify-content: center;
+    height: 290px;
+    width: 260px;
+    margin-left: 30px;
+    
+}
+
+.card{
+    
+    margin: 16px;
+    height: 500px !important;
+}
+
+.flex-box{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    align-self: center;
+    margin: auto;
+
+}
+
+.bag{
+   display: flex !important;
+   align-items: center; 
+   justify-content: center;
+   align-self: center;
+   margin: auto;
+   width: fit-content;
+   
+}
+
+.stars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    margin: 5px !important;
+    color: gold;
+}
