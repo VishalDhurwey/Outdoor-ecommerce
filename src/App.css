@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+:root {
+  --primary-color: #2B6777;
+  --secondary-color: #52AB98;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --text-light: #666;
+  --white: #fff;
+  --error: #ff4444;
+  --success: #4CAF50;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+  min-height: 100vh;
+  background-color: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
+.app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-content {
+  flex: 1;
+  padding-bottom: 60px;
+  min-height: calc(100vh - 200px);
 }
 
-@keyframes App-logo-spin {
+a {
+  text-decoration: none;
+  color: inherit;
+  color: #2B6777;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1e4d5c;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f7f6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2B6777;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e4d5c;
+}
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(10px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 0 24px;
+  }
+  .main-content {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 16px;
+  }
+  .main-content {
+    padding-bottom: 32px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: #1e4b56;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background-color: #3d8b7a;
+  transform: translateY(-2px);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }

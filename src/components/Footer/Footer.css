@@ -1,0 +1,186 @@
+.features-bar {
+  background-color: #f4f7f6;
+  padding: 40px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.feature-item .MuiSvgIcon-root {
+  color: #2B6777;
+  font-size: 2rem;
+}
+
+.feature-title {
+  color: #1a1a1a;
+  font-weight: 600 !important;
+  margin-bottom: 4px !important;
+}
+
+.feature-text {
+  color: #666;
+  font-size: 0.9rem !important;
+}
+
+.main-footer {
+  background-color: #fff;
+  padding: 60px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.footer-title {
+  color: #1a1a1a;
+  font-weight: 600 !important;
+  margin-bottom: 24px !important;
+}
+
+.footer-description {
+  color: #666;
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: 24px !important;
+}
+
+.social-links {
+  display: flex;
+  gap: 8px;
+}
+
+.social-icon {
+  color: #2B6777 !important;
+  background-color: #f4f7f6 !important;
+  transition: all 0.3s ease !important;
+}
+
+.social-icon:hover {
+  color: #fff !important;
+  background-color: #2B6777 !important;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links .MuiButton-root {
+  color: #666 !important;
+  justify-content: flex-start !important;
+  padding: 4px 0 !important;
+  text-transform: none !important;
+  font-weight: 400 !important;
+  transition: all 0.3s ease !important;
+}
+
+.footer-links .MuiButton-root:hover {
+  color: #2B6777 !important;
+  background: none !important;
+}
+
+.newsletter-text {
+  color: #666;
+  font-size: 0.9rem !important;
+  margin-bottom: 16px !important;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 8px;
+}
+
+.newsletter-input {
+  flex: 1;
+}
+
+.newsletter-input .MuiOutlinedInput-root {
+  background-color: #f4f7f6;
+}
+
+.newsletter-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #2B6777;
+}
+
+.newsletter-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #2B6777;
+}
+
+.subscribe-btn {
+  background-color: #2B6777 !important;
+  color: white !important;
+  padding: 8px 24px !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+.subscribe-btn:hover {
+  background-color: #1e4d5c !important;
+}
+
+.bottom-footer {
+  background-color: #fff;
+  padding: 24px 0;
+}
+
+.copyright {
+  color: #666;
+  font-size: 0.9rem !important;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-bottom-links .MuiButton-root {
+  color: #666 !important;
+  padding: 0 !important;
+  text-transform: none !important;
+  font-weight: 400 !important;
+  min-width: unset !important;
+  transition: all 0.3s ease !important;
+}
+
+.footer-bottom-links .MuiButton-root:hover {
+  color: #2B6777 !important;
+  background: none !important;
+}
+
+@media (max-width: 900px) {
+  .features-bar {
+    padding: 32px 0;
+  }
+
+  .feature-item {
+    text-align: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .main-footer {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .subscribe-btn {
+    width: 100%;
+  }
+
+  .footer-bottom-links {
+    margin-top: 16px;
+    justify-content: center;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}

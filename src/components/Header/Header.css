@@ -1,0 +1,252 @@
+.top-bar {
+  background-color: #f8f9fa;
+  padding: 8px 0;
+  font-size: 0.875rem;
+  border-bottom: 1px solid #eee;
+}
+
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.social-icon {
+  color: #666 !important;
+  padding: 4px !important;
+}
+
+.social-icon:hover {
+  color: #ff6b6b !important;
+}
+
+.announcement-bar {
+  background-color: #2B6777;
+  color: white;
+  padding: 8px 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.top-right {
+  display: flex;
+  gap: 16px;
+}
+
+.currency-btn, .language-btn {
+  color: #666 !important;
+  font-size: 0.75rem !important;
+  padding: 0 !important;
+  min-width: 0 !important;
+  font-weight: 500 !important;
+}
+
+.currency-btn:hover, .language-btn:hover {
+  color: #ff6b6b !important;
+}
+
+.header {
+  background-color: white !important;
+  box-shadow: none !important;
+}
+
+.header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding: 16px 0 !important;
+}
+
+.logo {
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -1px;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #2B6777;
+}
+
+.search-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: 2px solid #eee;
+  border-radius: 4px;
+  padding: 4px 16px;
+  max-width: 600px;
+  transition: all 0.3s ease;
+}
+
+.search-box:focus-within {
+  border-color: #ff6b6b;
+}
+
+.search-input {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-button {
+  color: #666 !important;
+  padding: 8px !important;
+}
+
+.search-button:hover {
+  color: #ff6b6b !important;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.action-icon {
+  color: #1a1a1a !important;
+  transition: all 0.3s ease !important;
+}
+
+.action-icon:hover {
+  color: #2B6777 !important;
+  background-color: rgba(43, 103, 119, 0.08) !important;
+}
+
+.login-btn {
+  background-color: #2B6777 !important;
+  color: white !important;
+  padding: 6px 16px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
+}
+
+.login-btn:hover {
+  background-color: #1e4d5c !important;
+}
+
+.profile-menu .MuiMenuItem-root {
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  min-width: 150px;
+  transition: all 0.3s ease;
+}
+
+.profile-menu .MuiMenuItem-root:hover {
+  color: #2B6777;
+  background-color: rgba(43, 103, 119, 0.08);
+}
+
+.nav-menu {
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500 !important;
+  font-size: 0.8rem !important;
+  padding: 8px 0 !important;
+  min-width: 0 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.nav-link:hover {
+  color: #ff6b6b !important;
+}
+
+@media (max-width: 1200px) {
+  .nav-links {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .announcement-bar {
+    font-size: 0.8rem;
+    padding: 6px 0;
+  }
+
+  .header-toolbar {
+    padding: 12px 0 !important;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .action-icon {
+    padding: 6px !important;
+  }
+
+  .login-btn {
+    padding: 4px 12px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .announcement {
+    display: none;
+  }
+
+  .header-toolbar {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: none;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-start;
+  }
+
+  .nav-link {
+    font-size: 0.75rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .top-bar-content {
+    justify-content: space-between;
+  }
+
+  .social-icons {
+    display: none;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+}

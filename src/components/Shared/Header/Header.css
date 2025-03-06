@@ -1,0 +1,60 @@
+.header {
+  background-color: #2B6777;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.logo {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.9;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.auth-button {
+  text-transform: none;
+  border-radius: 8px;
+  padding: 6px 16px;
+  transition: all 0.3s ease;
+}
+
+.auth-button.outlined {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.auth-button.outlined:hover {
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cart-button {
+  margin-left: 16px;
+  transition: transform 0.2s ease;
+}
+
+.cart-button:hover {
+  transform: scale(1.1);
+}
+
+.welcome-text {
+  color: white;
+  font-weight: 500;
+}
