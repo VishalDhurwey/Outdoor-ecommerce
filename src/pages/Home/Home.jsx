@@ -46,7 +46,7 @@ const Home = () => {
             <Grid item xs={12} md={6}>
               <Box className="banner-image-container">
                 <img 
-                  src="/images/banner/hero-camping.jpg" 
+                  src="/images/banner/FOR EMMA, FOREVER AGO.jpeg" 
                   alt="Camping Scene"
                   className="banner-image"
                 />
